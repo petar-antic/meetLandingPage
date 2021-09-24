@@ -242,7 +242,7 @@ button {
   margin-bottom: -28px;
 }
 .container .wrapper2 .verticalLine {
-  margin: 72px 24px 0px 24px;
+  margin: 72px auto 0px auto;
   width: 1px;
   height: 84px;
   background: #87879d;
@@ -528,6 +528,7 @@ button {
   .container .paragraph2 p {
     font-size: 18px;
     margin: 0px 24px 0px 24px;
+    overflow: hidden;
   }
   .container footer {
     background: linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(/assets/desktop/image-footer.jpg);

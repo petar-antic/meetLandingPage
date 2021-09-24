@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
 
+$textColor: #87879d;
+$titleColor: #28283d;
+
+$btn1: #4d96a9;
+$btn2: #855fb1;
+$btn1Hover: #71c0d4;
+$btn2Hover: #b18bdd;
+
+
+$btnSpan: #8fe3f9;
+$btnTextTwo: #d9b8ff;
+$backgroundColor: #f2f2f2;
+$white: #ffffff;
+$secondWhite: #fafafa;
+
+$wrapper: rgba(79, 79, 79, 0.25);
+
+
 * {
   margin: 0px;
   padding: 0px;
@@ -122,14 +140,14 @@ button {
         margin-bottom: 24px;
         line-height: 44px;
         overflow: hidden;
-        color: #28283d;
+        color: $titleColor;
         opacity: 0.8;
       }
       p {
         font-size: 18px;
         font-weight: 500;
         padding-bottom: 32px;
-        color: #87879d;
+        color: $textColor;
       }
     }
     .buttons {
@@ -142,13 +160,13 @@ button {
         border-radius: 29px;
         font-size: 16px;
         line-height: 26px;
-        background-color: #4d96a9;
+        background-color: $btn1;
         border: none;
         font-weight: 900;
-        color: white;
+        color: $white;
         span {
           margin-left: 4px;
-          color: #8fe3f9;
+          color: $btnSpan;
         }
       }
       button:last-child {
@@ -157,10 +175,10 @@ button {
         width: 139px;
         height: 58px;
         border-radius: 29px;
-        background-color: #855fb1;
+        background-color: $btn2;
         border: none;
         font-size: 16px;
-        color: white;
+        color: $white;
         font-weight: 900;
       }
     }
@@ -170,15 +188,15 @@ button {
       margin: 64px auto 0px auto;
       width: 1px;
       height: 100px;
-      background: #87879d;
+      background: $textColor;
     }
     .circle {
       margin: 0 24px 64px 24px;
       width: 56px;
       height: 56px;
-      background: #fafafa;
+      background: $secondWhite;
       border-radius: 50%;
-      border: 1px solid #87879d;
+      border: 1px solid $textColor;
       position: relative;
       margin: 0 24px 0 24px;
       font-weight: 900;
@@ -189,7 +207,7 @@ button {
       left: 50%;
       transform: translate(-50%, -50%);
       margin: 0;
-      color: #87879d;
+      color: $textColor;
       font-size: 16px;
       line-height: 26px;
     }
@@ -230,13 +248,13 @@ button {
       line-height: 36px;
       font-weight: 900;
       margin: 24px 0px 32px 0px;
-      color: #28283d;
+      color: $titleColor;
     }
     h2 {
       font-size: 16px;
       line-height: 26px;
       font-weight: 900;
-      color: #4d96a9;
+      color: $btn1;
       text-transform: uppercase;
       letter-spacing: 4px;
     }
@@ -244,23 +262,23 @@ button {
       font-size: 16px;
       line-height: 26px;
       font-weight: 500;
-      color: #87879d;
+      color: $textColor;
     }
   }
   .wrapper2 {
     margin-bottom: -28px;
     .verticalLine {
-      margin: 72px 24px 0px 24px;
+      margin: 72px auto 0px auto;
       width: 1px;
       height: 84px;
-      background: #87879d;
+      background: $textColor;
     }
     .circle {
       width: 56px;
       height: 56px;
-      background: #fafafa;
+      background: $secondWhite;
       border-radius: 50%;
-      border: 1px solid #87879d;
+      border: 1px solid $textColor;
       position: relative;
     }
     h5 {
@@ -268,7 +286,7 @@ button {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #87879d;
+      color: $textColor;
       font-weight: 900;
       font-size: 16px;
       line-height: 26px;
@@ -287,14 +305,14 @@ button {
       h1 {
         margin: 92px 24px 24px 24px;
         overflow: hidden;
-        color: white;
+        color: $secondWhite;
         font-size: 32px;
         line-height: 36px;
         font-weight: 900;
       }
       p {
         margin: 0px 24px;
-        color: #fafafa;
+        color: $secondWhite;
         font-size: 18px;
         line-height: 26px;
         font-weight: 500;
@@ -306,13 +324,13 @@ button {
         border-radius: 29px;
         font-size: 16px;
         line-height: 26px;
-        background-color: #855fb1;
+        background-color: $btn2;
         border: none;
         font-weight: 900;
-        color: white;
+        color: $white;
         span {
           margin-left: 4px;
-          color: #d9b8ff;
+          color: $btnTextTwo;
         }
       }
     }
@@ -350,6 +368,9 @@ button {
         h1 {
           opacity: 1;
         }
+        p{
+          max-width: 457px;
+        }
       }
       .buttons {
         flex-direction: row;
@@ -375,6 +396,7 @@ button {
       padding: 48px 98px 0px 98px;
       h1 {
         margin: 16px 63px 32px 65px;
+        max-width: 445px;
       }
       h2 {
         margin: 0px auto 0px auto;
@@ -500,14 +522,11 @@ button {
             font-weight: 900;
             color: white;
             &:hover {
-              background-color: #71c0d4;
+              background-color: $btn2Hover;
             }
             span {
               margin-left: 4px;
-              color: #8fe3f9;
-              &:hover {
-                color: #8fe3f9;
-              }
+              color: $btnSpan;
             }
           }
           button:last-child {
@@ -515,13 +534,13 @@ button {
             height: 58px;
             width: 139px;
             border-radius: 29px;
-            background-color: #855fb1;
+            background-color: $btn2;
             border: none;
             font-size: 16px;
-            color: white;
+            color: $white;
             font-weight: 900;
             &:hover {
-              background-color: #d9b8ff;
+              background-color: $btnTextTwo;
             }
           }
         }
@@ -593,7 +612,7 @@ button {
           margin: 0px;
           border-radius: 29px;
           &:hover {
-            background-color: #b18bdd;
+            background-color: $btn2Hover;
           }
         }
       }
