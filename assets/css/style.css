@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+button {
+  cursor: url("../images/pointer.png"), pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container .logo {
+  margin: 48px 24px 0px 24px;
+}
+.container .imageSlider {
+  margin-top: 54px;
+  width: 414px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 16px;
+}
+.container .imageSlider img {
+  width: 55.56px;
+  height: 55.54px;
+  border-radius: 50%;
+}
+.container .imageSlider .leftGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: end;
+  align-items: end;
+  justify-items: center;
+  grid-template-areas: "leftSide midSide rightSide" "leftSide midSide rightSide";
+}
+.container .imageSlider .leftGroup .leftSide {
+  grid-area: leftSide;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  gap: 14.14px 16.16px;
+}
+.container .imageSlider .leftGroup .midSide {
+  grid-area: midSide;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  padding-bottom: 27.77px;
+  gap: 14.14px 16.16px;
+}
+.container .imageSlider .leftGroup .rightSide {
+  grid-area: rightSide;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  gap: 14.14px 16.16px;
+}
+.container .imageSlider .desktopArticle {
+  display: none;
+}
+.container .imageSlider .rightGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: end;
+  align-items: end;
+  justify-items: center;
+  grid-template-areas: "leftSide midSide rightSide" "leftSide midSide rightSide";
+}
+.container .imageSlider .rightGroup .leftSide {
+  grid-area: leftSide;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  padding-bottom: 27.77px;
+  gap: 14.14px 16.16px;
+}
+.container .imageSlider .rightGroup .midSide {
+  grid-area: midSide;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  gap: 14.14px 16.16px;
+}
+.container .imageSlider .rightGroup .rightSide {
+  grid-area: rightSide;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  padding-bottom: 27.77px;
+  gap: 14.14px 16.16px;
+}
+.container .article {
+  margin: 48px 24px 0px 24px;
+}
+.container .article .paragraph {
+  text-align: center;
+}
+.container .article .paragraph h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  line-height: 44px;
+  overflow: hidden;
+  color: #28283d;
+  opacity: 0.8;
+}
+.container .article .paragraph p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 32px;
+  color: #87879d;
+}
+.container .article .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.container .article .buttons .download {
+  align-self: center;
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #4d96a9;
+  border: none;
+  font-weight: 900;
+  color: white;
+}
+.container .article .buttons .download span {
+  margin-left: 4px;
+  color: #8fe3f9;
+}
+.container .article .buttons button:last-child {
+  align-self: center;
+  margin-top: 16px;
+  width: 139px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: #855fb1;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 900;
+}
+.container .wrapper .verticalLine {
+  margin: 64px auto 0px auto;
+  width: 1px;
+  height: 100px;
+  background: #87879d;
+}
+.container .wrapper .circle {
+  margin: 0 24px 64px 24px;
+  width: 56px;
+  height: 56px;
+  background: #fafafa;
+  border-radius: 50%;
+  border: 1px solid #87879d;
+  position: relative;
+  margin: 0 24px 0 24px;
+  font-weight: 900;
+}
+.container .wrapper h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #87879d;
+  font-size: 16px;
+  line-height: 26px;
+}
+.container .blockImage {
+  padding: 64px 24px 0px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px 25px;
+  grid-template-areas: "videocall videochatting" "meeting texting";
+}
+.container .blockImage .videocall {
+  grid-area: videocall;
+}
+.container .blockImage .videochatting {
+  grid-area: videochatting;
+}
+.container .blockImage .meeting {
+  grid-area: meeting;
+}
+.container .blockImage .texting {
+  grid-area: texting;
+}
+.container .blockImage img {
+  width: 151px;
+  height: 143px;
+  border-radius: 8px;
+}
+.container .paragraph2 {
+  padding: 64px 24px 0px 24px;
+  text-align: center;
+}
+.container .paragraph2 h1 {
+  overflow: hidden;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  margin: 24px 0px 32px 0px;
+  color: #28283d;
+}
+.container .paragraph2 h2 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 900;
+  color: #4d96a9;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.container .paragraph2 p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #87879d;
+}
+.container .wrapper2 {
+  margin-bottom: -28px;
+}
+.container .wrapper2 .verticalLine {
+  margin: 72px auto 0px auto;
+  width: 1px;
+  height: 84px;
+  background: #87879d;
+}
+.container .wrapper2 .circle {
+  width: 56px;
+  height: 56px;
+  background: #fafafa;
+  border-radius: 50%;
+  border: 1px solid #87879d;
+  position: relative;
+}
+.container .wrapper2 h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #87879d;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+}
+.container footer {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(/assets/mobile/image-footer.jpg);
+  background-size: cover;
+}
+.container footer .paragraph3 h1 {
+  margin: 92px 24px 24px 24px;
+  overflow: hidden;
+  color: white;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+}
+.container footer .paragraph3 p {
+  margin: 0px 24px;
+  color: #fafafa;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.container footer .paragraph3 button {
+  margin: 32px 24px 66px 24px;
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #855fb1;
+  border: none;
+  font-weight: 900;
+  color: white;
+}
+.container footer .paragraph3 button span {
+  margin-left: 4px;
+  color: #d9b8ff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .imageSlider {
+    width: 820px;
+    height: 303px;
+    margin-top: 64px;
+    gap: 0px 32px;
+  }
+  .container .imageSlider img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  .container .imageSlider .leftGroup .midSide {
+    padding-bottom: 55px;
+  }
+  .container .imageSlider .rightGroup .leftSide,
+.container .imageSlider .rightGroup .rightSide {
+    padding-bottom: 55px;
+  }
+  .container .article {
+    padding: 72px 155px 0px 155px;
+  }
+  .container .article .paragraph h1 {
+    opacity: 1;
+  }
+  .container .article .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container .article .buttons button:last-child {
+    margin: 0px 0px 0px 16px;
+  }
+  .container .blockImage {
+    padding: 67px 40px 0px 39px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 11px;
+    grid-template-areas: "videocall videochatting meeting texting";
+  }
+  .container .blockImage img {
+    width: 164px;
+    height: 156px;
+  }
+  .container .paragraph2 {
+    padding: 48px 98px 0px 98px;
+  }
+  .container .paragraph2 h1 {
+    margin: 16px 63px 32px 65px;
+  }
+  .container .paragraph2 h2 {
+    margin: 0px auto 0px auto;
+  }
+  .container .wrapper2 .verticalLine {
+    margin-top: 80px;
+  }
+  .container footer .paragraph3 h1 {
+    margin: 92px 156px 30px 155px;
+    font-size: 40px;
+    line-height: 44px;
+    height: 90px;
+  }
+  .container footer .paragraph3 p {
+    margin: 0px 98px 0px 97px;
+  }
+  .container footer .paragraph3 .button {
+    margin: 40px 288px 66px 287px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container .logo {
+    margin: 80px 24px 62px 24px;
+  }
+  .container .imageSlider {
+    margin-top: 0px;
+    width: 1504px;
+    height: 358px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 88px;
+    grid-template-areas: "leftGroup desktopArticle rightGroup";
+  }
+  .container .imageSlider img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  .container .imageSlider .leftGroup,
+.container .imageSlider .rightGroup {
+    display: grid;
+    gap: 0px 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "leftSide midSide rightSide" "leftSide midSide rightSide";
+    align-items: center;
+  }
+  .container .imageSlider .leftGroup .leftSide,
+.container .imageSlider .rightGroup .leftSide {
+    grid-area: leftSide;
+    overflow: hidden;
+    gap: 28px 0px;
+  }
+  .container .imageSlider .leftGroup .midSide,
+.container .imageSlider .rightGroup .midSide {
+    grid-area: midSide;
+    gap: 28px 0px;
+  }
+  .container .imageSlider .leftGroup .rightSide,
+.container .imageSlider .rightGroup .rightSide {
+    grid-area: rightSide;
+    gap: 28px 0px;
+    overflow: hidden;
+  }
+  .container .imageSlider .leftGroup {
+    grid-area: leftGroup;
+  }
+  .container .imageSlider .leftGroup .midSide {
+    padding-bottom: 110px;
+  }
+  .container .imageSlider .rightGroup {
+    grid-area: rightGroup;
+  }
+  .container .imageSlider .rightGroup .midSide {
+    padding-top: 110px;
+  }
+  .container .imageSlider .desktopArticle {
+    margin-top: 47px;
+    display: block;
+    grid-area: desktopArticle;
+    overflow: hidden;
+  }
+  .container .imageSlider .desktopArticle .paragraph {
+    text-align: center;
+  }
+  .container .imageSlider .desktopArticle .paragraph h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-bottom: 34px;
+    color: #28283d;
+    overflow: hidden;
+    height: 133px;
+  }
+  .container .imageSlider .desktopArticle .paragraph p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: #87879d;
+  }
+  .container .imageSlider .desktopArticle .buttons {
+    display: flex;
+    justify-content: center;
+    height: 58px;
+    overflow: hidden;
+  }
+  .container .imageSlider .desktopArticle .buttons .download {
+    width: 193px;
+    height: 58px;
+    border-radius: 29px;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #4d96a9;
+    border: none;
+    font-weight: 900;
+    color: white;
+  }
+  .container .imageSlider .desktopArticle .buttons .download:hover {
+    background-color: #71c0d4;
+  }
+  .container .imageSlider .desktopArticle .buttons .download span {
+    margin-left: 4px;
+    color: #8fe3f9;
+  }
+  .container .imageSlider .desktopArticle .buttons .download span:hover {
+    color: #8fe3f9;
+  }
+  .container .imageSlider .desktopArticle .buttons button:last-child {
+    margin-left: 16px;
+    height: 58px;
+    width: 139px;
+    border-radius: 29px;
+    background-color: #855fb1;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+  }
+  .container .imageSlider .desktopArticle .buttons button:last-child:hover {
+    background-color: #d9b8ff;
+  }
+  .container .article {
+    display: none;
+  }
+  .container .wrapper .verticalLine {
+    margin: 110px auto 0px auto;
+    height: 84px;
+  }
+  .container .wrapper .circle {
+    margin: 0 24px 79px 24px;
+  }
+  .container .blockImage {
+    padding: 0px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 30px;
+    grid-template-areas: "videocall videochatting meeting texting";
+    grid-template-rows: 1fr;
+  }
+  .container .blockImage img {
+    width: 255px;
+    height: 242px;
+  }
+  .container .paragraph2 {
+    padding: 80px 450px 0px 450px;
+  }
+  .container .paragraph2 h1 {
+    margin: 16px auto 32px auto;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 900;
+    width: 445px;
+  }
+  .container .paragraph2 p {
+    font-size: 18px;
+    margin: 0px 24px 0px 24px;
+    overflow: hidden;
+  }
+  .container footer {
+    background: linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url(/assets/desktop/image-footer.jpg);
+  }
+  .container footer .paragraph3 {
+    width: 100%;
+    height: 308px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container footer .paragraph3 h1 {
+    width: 350px;
+    margin: 0px;
+    text-align: left;
+  }
+  .container footer .paragraph3 p {
+    width: 350px;
+    margin: 0px 92px 0px 125px;
+    text-align: left;
+  }
+  .container footer .paragraph3 button {
+    margin: 0px;
+    border-radius: 29px;
+  }
+  .container footer .paragraph3 button:hover {
+    background-color: #b18bdd;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
